@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f1117;
+            color: #e8e8e8;
+            font-family: 'DM Sans', sans-serif;
+            min-height: 100vh;
+        }
+        h1, h2, h3 {
+            font-family: 'DM Serif Display', serif;
+        }
+        .navbar {
+            background-color: #1a1d27;
+            border-bottom: 1px solid #2e3144;
+        }
+        .navbar-brand {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.4rem;
+            color: #a78bfa !important;
+        }
+        .card {
+            background-color: #1a1d27;
+            border: 1px solid #2e3144;
+            border-radius: 16px;
+        }
+        .form-select {
+            background-color: #23263a;
+            border: 1px solid #3a3f5c;
+            color: #e8e8e8;
+            border-radius: 8px;
+        }
+        .form-select:focus {
+            background-color: #23263a;
+            border-color: #a78bfa;
+            color: #e8e8e8;
+            box-shadow: 0 0 0 0.2rem rgba(167, 139, 250, 0.25);
+        }
+        .form-label {
+            color: #a0a8c0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .btn-predict {
+            background: linear-gradient(135deg, #a78bfa, #7c3aed);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 2.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: opacity 0.2s;
+        }
+        .btn-predict:hover {
+            opacity: 0.9;
+            color: white;
+        }
+        .result-box {
+            background: linear-gradient(135deg, #1e1b4b, #2e1065);
+            border: 1px solid #a78bfa;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .result-label {
+            color: #a0a8c0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .result-value {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3rem;
+            color: #a78bfa;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg mb-5">
+        <div class="container">
+            <span class="navbar-brand">Salary Predictor</span>
+            <span class="text-muted small">BAIS:3300 &mdash; Drew Peterson</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
